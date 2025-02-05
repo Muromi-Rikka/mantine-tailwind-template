@@ -1,10 +1,9 @@
 import { defineConfig } from "@rsbuild/core";
 import { pluginReact } from "@rsbuild/plugin-react";
+import tailwind from "@tailwindcss/postcss";
 import postcssImport from "postcss-import";
 import postcssPresetMantine from "postcss-preset-mantine";
 import postcssSimpleVars from "postcss-simple-vars";
-import tailwind from "tailwindcss";
-import tailwindNest from "tailwindcss/nesting";
 
 export default defineConfig({
   server: {
@@ -26,7 +25,6 @@ export default defineConfig({
             },
           }),
           tailwind,
-          tailwindNest,
         ],
       },
     },
